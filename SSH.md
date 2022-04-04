@@ -6,7 +6,7 @@ Create and save SSH key on Macbook using VS Code in order to connect with Github
   `git config --global user.email "hygisonbrandao@gmail.com"`
 3) Check for Existent SSH Keys:
   `ls -al ~/.ssh`
-4) Create New Key (Use Github Email):
+4) Create New Key (Use Github Email), after creation, keep pressing enter until it is over, no need to set anything:
   `ssh-keygen -t rsa -b 4096 -C "hygisonbrandao@gmail.com"`
 5) Copy the SSH Key to the clip:
   `pbcopy < ~/.ssh/id_rsa.pub`
