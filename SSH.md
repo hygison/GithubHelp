@@ -4,7 +4,7 @@ Create and save SSH key on Macbook using VS Code in order to connect with Github
   `git config --global user.name "Hygison Brandao"`
 2) Set Email (Github email):
   `git config --global user.email "hygisonbrandao@gmail.com"`
-3) Check for Existent SSH Keys:
+3) Check for Existent SSH Keys, if there are keys, it will show up, and you can skip to Step-5:
   `ls -al ~/.ssh`
 4) Create New Key (Use Github Email), after creation, keep pressing enter until it is over, no need to set anything:
   `ssh-keygen -t rsa -b 4096 -C "hygisonbrandao@gmail.com"`
