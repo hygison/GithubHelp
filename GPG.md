@@ -9,3 +9,14 @@ export GPG_TTY=$(tty)
 ```
 echo "test" | gpg --clearsign
 ```
+
+Cache the password for a longer time (157680000 = 5 years)
+```
+mkdir -p ~/.gnupg
+echo "default-cache-ttl 157680000" >> ~/.gnupg/gpg-agent.conf
+```
+
+To open the config file
+```
+nano ~/.gnupg/gpg-agent.conf
+```
